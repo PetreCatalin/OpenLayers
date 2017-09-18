@@ -1,0 +1,27 @@
+<div class = "jumbotron">
+    <h1> Draw on the map </h1>
+</div>
+
+<div class="row">
+    <div class=col-md-1> </div>
+    
+    <div class="col-md-8">
+        <div id="map" class="map"> </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label for="select">Select shape:</label>
+
+            <select class="form-control input-xlarge"  (change)="change($event.target.value)" id="select">
+                <option class="alert alert-success" *ngFor="let type of types" [value]="type">{{type}}</option>
+            </select>
+        </div>  
+        
+        <label for="color-picker">Select color:</label>
+            <br>
+            <input type="color" id="color-picker" (change)="changeColor($event.target.value)" />
+
+    </div>
+
+</div>

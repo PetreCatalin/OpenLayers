@@ -1,0 +1,30 @@
+<div class = "jumbotron">
+        <h1> Move + Change Zoom </h1>
+    </div>
+    
+    <div class="row">
+        <div class=col-md-1> </div>
+        
+        <div class="col-md-9">
+            <div id="map" class="map"> </div>
+        </div>
+    
+        <div class="col-md-1">
+                <div id="mySidenav" class="sidenav">
+                        <a id="london" (click)="centerLondon()">London</a>
+                        <a id="moscow" (click)="centerMoscow()">Moscow</a>
+                        <a id="rome"   (click)="centerRome()">Rome</a>
+                        <a id="bern"   (click)="centerBern()">Bern</a>
+                </div>
+
+                <div class="form-group">
+                    <label for="zoom">Zoom: </label>
+                    <input class="form-control" id="zoom" type="number" #z value={{zoom}}>
+                    
+                    <br>
+                    <button type="button" class="btn btn-success" (click)="changeZoom(z.value)">Change</button>
+                </div>
+
+        </div>
+    
+    </div>

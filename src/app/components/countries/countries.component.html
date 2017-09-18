@@ -1,0 +1,19 @@
+<div class = "jumbotron">
+    <h1> Countries </h1>
+</div>
+
+<div class="row">
+    <div class=col-md-1> </div>
+    
+    <div class="col-md-9">
+        <div id="map" class="map" (click)="clickMap()"> </div>       
+    </div>
+
+    <div class="col-md-2">
+        <div id="selectedCountry"> {{selectedCountry}} </div>
+        <br>
+ 
+        <input *ngIf=" url!='initial' " type="image" id="flag" alt="No Existing Flag" src={{url}}> 
+    </div>
+
+</div>
