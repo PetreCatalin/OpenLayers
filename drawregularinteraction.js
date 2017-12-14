@@ -18,6 +18,8 @@
  *	@param { number } maxCircleCoordinates Maximum number of point on a circle, default: 100
  */
 
+console.log('enea');
+
 ol.interaction.DrawRegular = function (options) {
     if (!options) options = {};
     var self = this;
